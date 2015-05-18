@@ -1,0 +1,3 @@
+- fix the initialization of arrays bug, e.g. when -A 0 -Z 0 are set, etc... - DONE
+- fix the bug when the input files are not the same dimensions, only same dimension files should be allowed - PENDING
+- add the new command line parsing using getopt() which is being used by transient/periodic - DONE

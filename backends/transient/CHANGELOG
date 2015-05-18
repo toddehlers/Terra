@@ -1,0 +1,14 @@
+05/27/05 
+        - added new command line parsing via getopt().
+        - general code cleanup to make it easier to maintain.
+
+06/04/05
+        - added new paths, WIN32 compatability added for writing output.
+        - massive code cleanup
+
+06/10/05
+	- removed the file formats, and reverted back to Santosh's file formatting.
+	  will have to worry about this later for fear of breaking any file formatting
+	  which the plotting software may be relying on.
+
+

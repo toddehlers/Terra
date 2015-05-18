@@ -1,0 +1,84 @@
+
+aft.cc,895
+#define HE_NODES HE_NODES1,0
+#define HE_STEPS HE_STEPS2,21
+int get_aft_age(double** timein,double** tempin,const int m,const int n,double* aftAgesArray)get_aft_age21,917
+int aft_age_fun(double* time_pad,double* temp_pad,int nin,double *age2)aft_age_fun94,2505
+int anneal(double* subtemp,double* subtime,int nsubstp,double* age2)anneal121,3089
+int calc_age(double* t_length,int nsubstp,double* subtime,double* age)calc_age230,6246
+int anneal_comp(double* t_length,int nsubstp,int* fst_subsub,int nsubsub,double* sstime,double* sstemp)anneal_comp266,6935
+int add_subsub_steps(int nsubsub,int imore,double* sstime_new,double* sstemp_new,double* sstemp,double* sstime,int* addmore)add_subsub_steps372,10628
+int check_tot_anneal(int* imore,int* addmore,double* sstemp, double* sstime,int nsubsub,double* subtemp,double* subtime,int nsubstp,int* fst_subsub)check_tot_anneal408,11744
+
+age_prediction.cc,1231
+#undef __WIN32____WIN32__15,272
+#define FILE_SUFFIX FILE_SUFFIX17,290
+#define TECPLOT_FILE_SUFFIX TECPLOT_FILE_SUFFIX18,317
+#define ERR_HEAP ERR_HEAP19,360
+#define ERR_FILE ERR_FILE20,408
+const char *versionString = "Age Prediction - v1.0";versionString24,518
+int NSTEPS = 20;NSTEPS31,964
+double MILYEARS = 50.0; 			// time padding for thermochronometer workMILYEARS32,981
+double TIME_STEP = 20000.0;		// time step size in FEM calculation, units = years. converted to sec in program.TIME_STEP33,1051
+double B = 3.160e-22;					// material constant (My)B34,1162
+double EBAR = 49.77;					// acivation energy (kcal / mol)EBAR35,1214
+double R = 0.0019872;					// gas constant (kcal / (mol * deg))R36,1272
+double DPAR = 1.8;DPAR37,1335
+double ALPHA = -0.12327;ALPHA38,1354
+double BETA = -11.988;BETA39,1379
+double MIN_DETECT = 0.13;MIN_DETECT40,1402
+double C[4] = {-19.844, 0.38951, -51.253, -7.6423};C41,1428
+void writeOutput(double **xHistArray, double **yHistArray, double **zHistArray, double *aheAgesArray,writeOutput45,1568
+void writeTecPlot(double **xHistArray, double **yHistArray, double **zHistArray, double *aheAgesArray,writeTecPlot86,2758
+int main(int argc, char *argv[])main129,3995
+
+ahe.cc,1055
+#define HE_NODES HE_NODES1,0
+#define HE_STEPS HE_STEPS2,21
+#define PAD_STEPS PAD_STEPS3,45
+int get_he_age(double** thist, double** temp, const int m, const int n, double a, double D0,get_he_age28,1371
+int calc_he_age(double *HeProd, double *HeFin, double He[], double r[], double L[], double A,calc_he_age186,7528
+int solve(double Gstiff[][4], double rhs[], double He[], double gam[])solve214,8133
+int apply_bc(double Gstiff[][4], double rhs[], double r[])apply_bc239,8618
+int assem_rhs(double L[], double P[][4], double Fn1, double Fn2, double *A_temp, double r[],assem_rhs257,9063
+int assem_es(int n1, double L[], double dt[], double D[], double Estiff[][3], int t)assem_es316,10975
+int assem_gs(double rhs[], double Gstiff[][4], double P[][4], double Estiff[][3], double L[],assem_gs339,11418
+int interp_Thist(double* temp_pad, double* thist_pad, int m_pad, double T[], double time[], double dt[],interp_Thist379,12285
+void init_variables(double r[], double L[], double* temp_pad, double He[], int m_pad)init_variables467,14573
+
+getopt.cc,418
+#define OPTERRCOLON OPTERRCOLON64,2907
+#define OPTERRNF OPTERRNF65,2931
+#define OPTERRARG OPTERRARG66,2952
+char *optarg;optarg68,2975
+int optreset = 0;optreset69,2989
+int optind = 1;optind70,3007
+int opterr = 1;opterr71,3023
+int optopt;optopt72,3039
+optiserr(int argc, char * const *argv, int oint, const char *optstr,optiserr75,3063
+getopt(int argc, char* const *argv, char *optstr)getopt107,3860
+
+getopt.h,34
+#define GETOPT_HGETOPT_H60,2844
+
+makefile,110
+CC = g++CC1,0
+CFLAGS = -W -Wall -g2CFLAGS2,9
+OBJS = ahe.o aft.o zft.o getopt.o age_prediction.oOBJS3,31
+
+utils.h,597
+#define __UTILS_H____UTILS_H__2,22
+#define ERR_HEAP ERR_HEAP11,159
+#define ERR_READ ERR_READ12,207
+bool read2D(string fileName, int rows, int cols, double **inArray)read2D17,314
+int countRows(string fileName)countRows45,829
+int countCols(string fileName)countCols77,1303
+void init1dArray(double *&inArray, int size)init1dArray110,1812
+void init2dArray(double **&inArray,int size)init2dArray129,2087
+void init2dArray(double **&inArray,int rows, int cols)init2dArray153,2529
+void printMenu(const char *fileName)printMenu177,2974
+void printOptionsMenu()printOptionsMenu196,3524
+
+zft.cc,224
+int get_zft_age(double** timein,double** tempin,const int m,const int n,double zftAgesArray[])get_zft_age13,345
+int pass_close(double ctemp,double** temp,double** time,int m,int currSample,double* age)pass_close122,2942

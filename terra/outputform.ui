@@ -1,0 +1,158 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>outputForm</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>outputForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>1</y>
+            <width>758</width>
+            <height>700</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>758</width>
+            <height>700</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>758</width>
+            <height>700</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>TERRA - AGE PREDICTION  - OUTPUT WINDOW</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0">
+            <property name="name">
+                <cstring>layout28</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer row="2" column="0">
+                    <property name="name">
+                        <cstring>spacer44</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>643</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton" row="2" column="1">
+                    <property name="name">
+                        <cstring>closeButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Close Window</string>
+                    </property>
+                </widget>
+                <widget class="QTable" row="1" column="0" rowspan="1" colspan="2">
+                    <column>
+                        <property name="text">
+                            <string>X</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Y</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>Z</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>AHe</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>ZHe</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>AFT</string>
+                        </property>
+                    </column>
+                    <column>
+                        <property name="text">
+                            <string>ZFT</string>
+                        </property>
+                    </column>
+                    <property name="name">
+                        <cstring>table1</cstring>
+                    </property>
+                    <property name="resizePolicy">
+                        <enum>AutoOne</enum>
+                    </property>
+                    <property name="numRows">
+                        <number>30</number>
+                    </property>
+                    <property name="numCols">
+                        <number>7</number>
+                    </property>
+                    <property name="readOnly">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>outputMainLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Particle Position &amp; Age</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>closeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>outputForm</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">outputform.ui.h</include>
+</includes>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

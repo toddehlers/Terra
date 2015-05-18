@@ -1,0 +1,4 @@
+TITLE= TERRA
+VARIABLES= X(km), Y(km), Z(km), AHe(Ma), ZHe(Ma), AFT(Ma), ZFT(Ma)
+ZONE I=1, F=POINT
+  0.000  0.000  0.000  4.346  54.55  8.023  60.00

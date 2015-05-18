@@ -1,0 +1,2042 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>topotherm</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>topotherm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>630</width>
+            <height>600</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>528</width>
+            <height>600</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>630</width>
+            <height>595</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>630</width>
+            <height>595</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>TERRA - THERMAL CALCULATION - UNIVERSITY OF MICHIGAN</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QTabWidget" row="0" column="0">
+            <property name="name">
+                <cstring>tabWidget</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>4</hsizetype>
+                    <vsizetype>4</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>1D Transient Erosion</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="Line" row="0" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>line23</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>HLine</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                    </widget>
+                    <widget class="QGroupBox" row="1" column="1" rowspan="5" colspan="1">
+                        <property name="name">
+                            <cstring>groupBox17</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Thermal Output Options</string>
+                        </property>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>time_1</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>43</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Million yrs output time</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>time_3</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>145</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Million yrs - Time 2</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>time_4</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>171</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Million yrs - Time 3</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>time_5</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>197</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Million yrs - Time 4 (Oldest)</string>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit27</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>119</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>0</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit28</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>145</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>5</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit29</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>171</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>10</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit210</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>197</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>15</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer148</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>68</x>
+                                    <y>69</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                        </spacer>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer149</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Vertical</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>68</x>
+                                    <y>223</y>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                        </spacer>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit211</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>273</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>60</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit212</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>299</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>120</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit213</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>325</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>250</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit214</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>351</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>350</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLineEdit">
+                            <property name="name">
+                                <cstring>lineEdit26</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>43</y>
+                                    <width>135</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>10</string>
+                            </property>
+                            <property name="alignment">
+                                <set>AlignRight</set>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>time_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>119</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Million yrs - Time 1 (Youngest)</string>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>checkBox5</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>19</y>
+                                    <width>287</width>
+                                    <height>18</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Plot temperature history of rock exposed at surface at:</string>
+                            </property>
+                            <property name="checked">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>checkBox6</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>95</y>
+                                    <width>287</width>
+                                    <height>18</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Plot geotherms at output times of:</string>
+                            </property>
+                            <property name="checked">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QCheckBox">
+                            <property name="name">
+                                <cstring>checkBox7</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>11</x>
+                                    <y>249</y>
+                                    <width>287</width>
+                                    <height>18</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Plot the depth history of the isotherms:</string>
+                            </property>
+                            <property name="checked">
+                                <bool>true</bool>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>temp_1</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>273</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Temperature 1 (C)</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>temp_2</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>299</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Temperature 2 (C)</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>temp_3</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>325</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Temperature 3 (C)</string>
+                            </property>
+                        </widget>
+                        <widget class="QLabel">
+                            <property name="name">
+                                <cstring>temp_4</cstring>
+                            </property>
+                            <property name="geometry">
+                                <rect>
+                                    <x>152</x>
+                                    <y>351</y>
+                                    <width>146</width>
+                                    <height>20</height>
+                                </rect>
+                            </property>
+                            <property name="text">
+                                <string>Temperature 4 (C)</string>
+                            </property>
+                        </widget>
+                    </widget>
+                    <widget class="QGroupBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>groupBox13</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="title">
+                            <string>Boundary Conditions</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLayoutWidget" row="0" column="0">
+                                <property name="name">
+                                    <cstring>layout107</cstring>
+                                </property>
+                                <grid>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QLineEdit" row="1" column="2">
+                                        <property name="name">
+                                            <cstring>lineEdit22</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>0.025</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignRight</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel1_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Surface Temperature</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>WordBreak|AlignVCenter</set>
+                                        </property>
+                                    </widget>
+                                    <spacer row="1" column="1">
+                                        <property name="name">
+                                            <cstring>spacer124</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>30</width>
+                                                <height>16</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <spacer row="0" column="1">
+                                        <property name="name">
+                                            <cstring>spacer121</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>30</width>
+                                                <height>16</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                    <widget class="QLabel" row="1" column="0">
+                                        <property name="name">
+                                            <cstring>textLabel2_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Basal Temperature Gradient</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>WordBreak|AlignVCenter</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLineEdit" row="0" column="2">
+                                        <property name="name">
+                                            <cstring>lineEdit21</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>0</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>AlignRight</set>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="1" column="3">
+                                        <property name="name">
+                                            <cstring>textLabel7_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>C/m</string>
+                                        </property>
+                                    </widget>
+                                    <widget class="QLabel" row="0" column="3">
+                                        <property name="name">
+                                            <cstring>textLabel6_2</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Celcius</string>
+                                        </property>
+                                    </widget>
+                                </grid>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="4" column="0">
+                        <property name="name">
+                            <cstring>groupBox16</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="title">
+                            <string>Erosion</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLineEdit" row="0" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit25</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>-0.5</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="2">
+                                <property name="name">
+                                    <cstring>textLabel12_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>mm/yr</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel5_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Rate</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="3" column="0">
+                        <property name="name">
+                            <cstring>groupBox15</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="title">
+                            <string>Thermal Properties</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel4_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Diffusivity</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="0" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit24</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>1.3636E-6</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="2">
+                                <property name="name">
+                                    <cstring>textLabel11_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m2/s</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="2" column="0">
+                        <property name="name">
+                            <cstring>groupBox14</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="title">
+                            <string>Model Geometry</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel3_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Maximum Model Depth</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="0" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit23</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>50000</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="2">
+                                <property name="name">
+                                    <cstring>textLabel8_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m</string>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QLayoutWidget" row="6" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>layout6</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer154</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>442</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Calculate Transient Solutions</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QGroupBox" row="5" column="0">
+                        <property name="name">
+                            <cstring>groupBox18</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>5</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="title">
+                            <string>Thermochronometer Age Output Options</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QCheckBox" row="0" column="0">
+                                <property name="name">
+                                    <cstring>checkBox8</cstring>
+                                </property>
+                                <property name="sizePolicy">
+                                    <sizepolicy>
+                                        <hsizetype>5</hsizetype>
+                                        <vsizetype>5</vsizetype>
+                                        <horstretch>0</horstretch>
+                                        <verstretch>0</verstretch>
+                                    </sizepolicy>
+                                </property>
+                                <property name="text">
+                                    <string>Write files for TERRA Age Prediction</string>
+                                </property>
+                                <property name="checked">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <spacer row="1" column="0">
+                                <property name="name">
+                                    <cstring>spacer192</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Fixed</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>20</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>2D Periodic Topography Model</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QGroupBox" row="4" column="0" rowspan="2" colspan="1">
+                        <property name="name">
+                            <cstring>groupBox7</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Thermochronometer Age Output Options</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QCheckBox" row="0" column="0">
+                                <property name="name">
+                                    <cstring>checkBox4</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Write files for TERRA Age Prediction</string>
+                                </property>
+                                <property name="checked">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="2" column="0" rowspan="2" colspan="1">
+                        <property name="name">
+                            <cstring>groupBox6</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Thermal Output Options</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QCheckBox" row="0" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>checkBox1</cstring>
+                                </property>
+                                <property name="enabled">
+                                    <bool>false</bool>
+                                </property>
+                                <property name="text">
+                                    <string>Plot temperature histories of rocks exposed at surface</string>
+                                </property>
+                                <property name="checked">
+                                    <bool>false</bool>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="1" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>checkBox2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Plot Isotherms and Topography</string>
+                                </property>
+                                <property name="checked">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QCheckBox" row="2" column="0" rowspan="1" colspan="2">
+                                <property name="name">
+                                    <cstring>checkBox3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Define Isotherms to output</string>
+                                </property>
+                                <property name="checked">
+                                    <bool>true</bool>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="3" column="0">
+                                <property name="name">
+                                    <cstring>lineEdit15</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>60</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="1">
+                                <property name="name">
+                                    <cstring>iso_1</cstring>
+                                </property>
+                                <property name="enabled">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="text">
+                                    <string>Isotherm 1 (Celcius)</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="4" column="0">
+                                <property name="name">
+                                    <cstring>lineEdit16</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>120</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="5" column="1">
+                                <property name="name">
+                                    <cstring>iso_3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Isotherm 3 (Celcius)</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="4" column="1">
+                                <property name="name">
+                                    <cstring>iso_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Isotherm 2 (Celcius)</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="6" column="1">
+                                <property name="name">
+                                    <cstring>iso_4</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Isotherm 4 (Celcius)</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="6" column="0">
+                                <property name="name">
+                                    <cstring>lineEdit18</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>250</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="5" column="0">
+                                <property name="name">
+                                    <cstring>lineEdit17</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>180</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="3" column="1" rowspan="2" colspan="1">
+                        <property name="name">
+                            <cstring>groupBox2</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Model Geometry</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLineEdit" row="0" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit7</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>20000</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="1" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit5</cstring>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="text">
+                                    <string>40000</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                                <property name="readOnly">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="toolTip" stdset="0">
+                                    <string></string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="2" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit8</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>1500</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="3" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit6</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>10000</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="2">
+                                <property name="name">
+                                    <cstring>textLabel41</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="2">
+                                <property name="name">
+                                    <cstring>textLabel43</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="2">
+                                <property name="name">
+                                    <cstring>textLabel44</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="2">
+                                <property name="name">
+                                    <cstring>textLabel42</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="0">
+                                <property name="name">
+                                    <cstring>textLabel8</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Topography amplitude</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit9</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="0">
+                                <property name="name">
+                                    <cstring>textLabel5</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Horizontal width</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit5</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel7</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Topography wavelength</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit8</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="0">
+                                <property name="name">
+                                    <cstring>textLabel6</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Maximum depth of calculation</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit6</cstring>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="1" column="1" rowspan="2" colspan="1">
+                        <property name="name">
+                            <cstring>groupBox1</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Boundary Conditions</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLineEdit" row="3" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit4</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>0.007</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="2" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>100000</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="0" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit1</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>10</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="1" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>1000</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="0">
+                                <property name="name">
+                                    <cstring>textLabel2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Lithosphere base temperature</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit2</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="2">
+                                <property name="name">
+                                    <cstring>textLabel37</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Celcius</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="2">
+                                <property name="name">
+                                    <cstring>textLabel38</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Celcius</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="2">
+                                <property name="name">
+                                    <cstring>textLabel39</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="2">
+                                <property name="name">
+                                    <cstring>textLabel40</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Celcius/m</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel1</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Surface temperature</string>
+                                </property>
+                                <property name="scaledContents">
+                                    <bool>true</bool>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit1</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="0">
+                                <property name="name">
+                                    <cstring>textLabel3</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Lithosphere base depth</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit3</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="0">
+                                <property name="name">
+                                    <cstring>textLabel4</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Surface temperature lapse rate</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit4</cstring>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="1" column="0">
+                        <property name="name">
+                            <cstring>groupBox5</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Erosion</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel14</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Erosion rate</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit15</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="2">
+                                <property name="name">
+                                    <cstring>textLabel50</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>mm/yr</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="0" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit14</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>0.5</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="QGroupBox" row="5" column="1">
+                        <property name="name">
+                            <cstring>groupBox4</cstring>
+                        </property>
+                        <property name="title">
+                            <string>Thermal Properties</string>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLineEdit" row="0" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit9</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>0.000001</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="1" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit10</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>2700</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="2" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit11</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>800</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="3" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit12</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>0.000001</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit" row="4" column="1">
+                                <property name="name">
+                                    <cstring>lineEdit13</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>10000</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>AlignRight</set>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="0">
+                                <property name="name">
+                                    <cstring>textLabel11</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Specific heat</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit12</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="0">
+                                <property name="name">
+                                    <cstring>textLabel10</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Density of crust</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit11</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="0">
+                                <property name="name">
+                                    <cstring>textLabel9</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Diffusivity</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit10</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="0" column="2">
+                                <property name="name">
+                                    <cstring>textLabel45</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m2/s</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="1" column="2">
+                                <property name="name">
+                                    <cstring>textLabel46</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>kg/m3</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="2" column="2">
+                                <property name="name">
+                                    <cstring>textLabel47</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>J/kg/K</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="2">
+                                <property name="name">
+                                    <cstring>textLabel48</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>W/m3</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="4" column="2">
+                                <property name="name">
+                                    <cstring>textLabel49</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>m</string>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="4" column="0">
+                                <property name="name">
+                                    <cstring>textLabel13</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Heat production characteristic depth</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit14</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel" row="3" column="0">
+                                <property name="name">
+                                    <cstring>textLabel12</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Surface volumetric heat production</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>WordBreak|AlignVCenter</set>
+                                </property>
+                                <property name="buddy" stdset="0">
+                                    <cstring>lineEdit13</cstring>
+                                </property>
+                            </widget>
+                        </grid>
+                    </widget>
+                    <widget class="Line" row="0" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>line21</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>HLine</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                    </widget>
+                    <widget class="QLayoutWidget" row="6" column="0" rowspan="1" colspan="2">
+                        <property name="name">
+                            <cstring>layout112</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer164</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>426</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButton1</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Calculate &amp;Steady State Solution</string>
+                                </property>
+                                <property name="accel">
+                                    <string>Alt+S</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBar</cstring>
+    </property>
+    <item text="&amp;File" name="fileMenu">
+        <action name="fileNewAction"/>
+        <action name="fileOpenAction"/>
+        <action name="fileSaveAction"/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="&amp;Edit" name="editMenu">
+        <action name="editUndoAction"/>
+        <action name="editRedoAction"/>
+        <action name="editCutAction"/>
+        <action name="editCopyAction"/>
+        <action name="editPasteAction"/>
+    </item>
+</menubar>
+<toolbars>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileNewAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
+        <property name="text">
+            <string>New</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;New</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+N</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileOpenAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
+        <property name="text">
+            <string>Open</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Open...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+O</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
+        <property name="text">
+            <string>Save</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Save</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Save As</string>
+        </property>
+        <property name="menuText">
+            <string>Save &amp;As...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>filePrintAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
+        <property name="text">
+            <string>Print</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Print...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+P</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Close</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Close</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Q</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editUndoAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
+        <property name="text">
+            <string>Undo</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Undo</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Z</string>
+        </property>
+        <property name="visible">
+            <bool>false</bool>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editRedoAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset></iconset>
+        </property>
+        <property name="text">
+            <string>Redo</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Redo</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Y</string>
+        </property>
+        <property name="visible">
+            <bool>false</bool>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCutAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>editcut</iconset>
+        </property>
+        <property name="text">
+            <string>&amp;Cut</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Cut</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+X</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCopyAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>editcopy</iconset>
+        </property>
+        <property name="text">
+            <string>Copy</string>
+        </property>
+        <property name="menuText">
+            <string>C&amp;opy</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+C</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editPasteAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>editpaste</iconset>
+        </property>
+        <property name="text">
+            <string>Paste</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Paste</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+V</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpContentsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Contents</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Contents...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpIndexAction</cstring>
+        </property>
+        <property name="text">
+            <string>Index</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Index...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>About</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;About</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+</actions>
+<connections>
+    <connection>
+        <sender>checkBox8</sender>
+        <signal>clicked()</signal>
+        <receiver>topotherm</receiver>
+        <slot>pop_up()</slot>
+    </connection>
+    <connection>
+        <sender>checkBox8</sender>
+        <signal>clicked()</signal>
+        <receiver>topotherm</receiver>
+        <slot>ckBox8()</slot>
+    </connection>
+    <connection>
+        <sender>checkBox4</sender>
+        <signal>clicked()</signal>
+        <receiver>topotherm</receiver>
+        <slot>ckBox4()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>topotherm</receiver>
+        <slot>send_back_transient()</slot>
+    </connection>
+    <connection>
+        <sender>checkBox8</sender>
+        <signal>clicked()</signal>
+        <receiver>topotherm</receiver>
+        <slot>ckBox8()</slot>
+    </connection>
+    <connection>
+        <sender>lineEdit7</sender>
+        <signal>textChanged(const QString&amp;)</signal>
+        <receiver>topotherm</receiver>
+        <slot>horiz_width()</slot>
+    </connection>
+    <connection>
+        <sender>checkBox3</sender>
+        <signal>clicked()</signal>
+        <receiver>topotherm</receiver>
+        <slot>isotherms()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>topotherm</receiver>
+        <slot>send_back()</slot>
+    </connection>
+    <connection>
+        <sender>editPasteAction</sender>
+        <signal>activated()</signal>
+        <receiver>topotherm</receiver>
+        <slot>editPaste()</slot>
+    </connection>
+    <connection>
+        <sender>editCopyAction</sender>
+        <signal>activated()</signal>
+        <receiver>topotherm</receiver>
+        <slot>editCopy()</slot>
+    </connection>
+    <connection>
+        <sender>editCutAction</sender>
+        <signal>activated()</signal>
+        <receiver>topotherm</receiver>
+        <slot>editCut()</slot>
+    </connection>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>topotherm</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAction</sender>
+        <signal>activated()</signal>
+        <receiver>topotherm</receiver>
+        <slot>fileSave()</slot>
+    </connection>
+    <connection>
+        <sender>fileOpenAction</sender>
+        <signal>activated()</signal>
+        <receiver>topotherm</receiver>
+        <slot>fileOpen()</slot>
+    </connection>
+    <connection>
+        <sender>fileNewAction</sender>
+        <signal>activated()</signal>
+        <receiver>topotherm</receiver>
+        <slot>fileNew()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>tabWidget</tabstop>
+    <tabstop>lineEdit1</tabstop>
+    <tabstop>lineEdit2</tabstop>
+    <tabstop>lineEdit3</tabstop>
+    <tabstop>lineEdit4</tabstop>
+    <tabstop>lineEdit7</tabstop>
+    <tabstop>lineEdit8</tabstop>
+    <tabstop>lineEdit6</tabstop>
+    <tabstop>lineEdit9</tabstop>
+    <tabstop>lineEdit10</tabstop>
+    <tabstop>lineEdit11</tabstop>
+    <tabstop>lineEdit12</tabstop>
+    <tabstop>lineEdit13</tabstop>
+    <tabstop>lineEdit14</tabstop>
+    <tabstop>checkBox1</tabstop>
+    <tabstop>checkBox2</tabstop>
+    <tabstop>checkBox3</tabstop>
+    <tabstop>lineEdit15</tabstop>
+    <tabstop>lineEdit16</tabstop>
+    <tabstop>lineEdit17</tabstop>
+    <tabstop>lineEdit18</tabstop>
+    <tabstop>checkBox4</tabstop>
+    <tabstop>pushButton1</tabstop>
+    <tabstop>lineEdit5</tabstop>
+    <tabstop>lineEdit21</tabstop>
+    <tabstop>lineEdit22</tabstop>
+    <tabstop>lineEdit23</tabstop>
+    <tabstop>lineEdit24</tabstop>
+    <tabstop>lineEdit25</tabstop>
+    <tabstop>checkBox5</tabstop>
+    <tabstop>lineEdit26</tabstop>
+    <tabstop>checkBox6</tabstop>
+    <tabstop>lineEdit27</tabstop>
+    <tabstop>lineEdit28</tabstop>
+    <tabstop>lineEdit29</tabstop>
+    <tabstop>lineEdit210</tabstop>
+    <tabstop>checkBox7</tabstop>
+    <tabstop>lineEdit211</tabstop>
+    <tabstop>lineEdit212</tabstop>
+    <tabstop>lineEdit213</tabstop>
+    <tabstop>lineEdit214</tabstop>
+    <tabstop>checkBox8</tabstop>
+    <tabstop>pushButton2</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">topotherm.ui.h</include>
+</includes>
+<slots>
+    <slot>fileNew()</slot>
+    <slot>fileOpen()</slot>
+    <slot>fileSave()</slot>
+    <slot>editCut()</slot>
+    <slot>editCopy()</slot>
+    <slot>editPaste()</slot>
+    <slot>send_back()</slot>
+    <slot>send_back_transient()</slot>
+    <slot>isotherms()</slot>
+    <slot>ckBox4()</slot>
+    <slot>ckBox8()</slot>
+    <slot>pop_up()</slot>
+    <slot>horiz_width()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

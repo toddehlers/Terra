@@ -1,0 +1,20 @@
+TERRA
+Thermochronometer Exhumation Record Recovery Analysis
+Version 1.0 (July 1, 2005)
+
+Copyright Todd Ehlers 2005 (tehlers@umich.edu)
+
+This program, and all associated subprograms, are free for use for non-profit applications.
+
+On-line help documentation is available via the "Help -> User Manual" menu.
+
+Programming Team:
+Todd Ehlers, Tehmasp Chaudhri, Santosh Kumar, Chris Fuller.
+
+Send all bug reports to tehlers@umich.edu
+Use this program at your own risk. 
+Although all programs have been checked for accuracy results are not guaranteed.
+
+These programs were written in C++ and with the Qt GUI interface (www. trolltech.com)
+Source code for these programs is available upon request. Command line driven versions of the
+software are also available for batch processing age prediction.

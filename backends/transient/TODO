@@ -1,0 +1,2 @@
+- be aware of the format of the temp_hist output file.  age_prediction would require the temp_hist file to be in
+  a column format while it appears that Santosh's plotting software might need it in a row-wise format.

@@ -1,0 +1,16 @@
+6/02/05 
+        - added new command line parsing via getopt().
+        - some upper code cleanup.
+
+7/3/05
+        - finished adding win32 compatability.
+        - added STDERR output to let user know which
+          files are being written.
+
+7/29/05
+        - fixed(?) the coordinate file problem, have
+          to get todd to ok it with further testing.
+
+8/21/05
+        - fixed the 3/4 position bug, threequarterPos = (valleyPos - quarterPos)
+

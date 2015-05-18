@@ -1,0 +1,3037 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>mainform</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>mainform</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>926</width>
+            <height>573</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>0</hsizetype>
+            <vsizetype>0</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>882</width>
+            <height>554</height>
+        </size>
+    </property>
+    <property name="baseSize">
+        <size>
+            <width>882</width>
+            <height>554</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>TERRA - AGE PREDICTION - UNIVERSITY OF MICHIGAN</string>
+    </property>
+    <property name="opaqueMoving">
+        <bool>false</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>mainLabel</cstring>
+            </property>
+            <property name="text">
+                <string>Predicted Age Input Parameters</string>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="0">
+            <property name="name">
+                <cstring>layout39</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>showOutputButton</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>false</bool>
+                    </property>
+                    <property name="text">
+                        <string>Show Summary Output Spreadsheet</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>420</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QLayoutWidget">
+                    <property name="name">
+                        <cstring>layout38</cstring>
+                    </property>
+                    <hbox>
+                        <property name="name">
+                            <cstring>unnamed</cstring>
+                        </property>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>calSelAgesButton</cstring>
+                            </property>
+                            <property name="text">
+                                <string>Calculate Selected Ages</string>
+                            </property>
+                        </widget>
+                        <spacer>
+                            <property name="name">
+                                <cstring>spacer2</cstring>
+                            </property>
+                            <property name="orientation">
+                                <enum>Horizontal</enum>
+                            </property>
+                            <property name="sizeType">
+                                <enum>Fixed</enum>
+                            </property>
+                            <property name="sizeHint">
+                                <size>
+                                    <width>20</width>
+                                    <height>20</height>
+                                </size>
+                            </property>
+                        </spacer>
+                        <widget class="QPushButton">
+                            <property name="name">
+                                <cstring>calAllAgesButton</cstring>
+                            </property>
+                            <property name="enabled">
+                                <bool>true</bool>
+                            </property>
+                            <property name="text">
+                                <string>Calculate All Ages</string>
+                            </property>
+                        </widget>
+                    </hbox>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QTabWidget" row="1" column="0">
+            <property name="name">
+                <cstring>mainTab</cstring>
+            </property>
+            <property name="enabled">
+                <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>3</hsizetype>
+                    <vsizetype>3</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>tab</cstring>
+                </property>
+                <attribute name="title">
+                    <string>General Settings</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <spacer row="0" column="1">
+                        <property name="name">
+                            <cstring>spacer14_2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Vertical</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>20</width>
+                                <height>120</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout22</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="Line" row="0" column="0" rowspan="2" colspan="2">
+                                <property name="name">
+                                    <cstring>mainLineOne</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>HLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QGroupBox" row="1" column="1" rowspan="2" colspan="1">
+                                <property name="name">
+                                    <cstring>groupConstants</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Global Variable Settings</string>
+                                </property>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>TimestepInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>275</x>
+                                            <y>47</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>20000.0</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer26</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>249</x>
+                                            <y>21</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>MilyearsInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>275</x>
+                                            <y>21</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>50.0</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textTimestep</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>47</y>
+                                            <width>232</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Time Step Size In FEM Calculation (years)</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textMilyears</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>21</y>
+                                            <width>232</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Additional Time Added To Cooling History (My)</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer27</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>249</x>
+                                            <y>47</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                            </widget>
+                            <spacer row="4" column="0">
+                                <property name="name">
+                                    <cstring>spacer6</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>20</width>
+                                        <height>80</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QGroupBox" row="3" column="0">
+                                <property name="name">
+                                    <cstring>groupOutputFiles</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Output File(s) (Forward Model)</string>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textOutputThree</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>80</y>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Final He Conc. Profiles (All Samples)</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>buttonOutputThree</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>400</x>
+                                            <y>80</y>
+                                            <width>30</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>...</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEditOutputThree</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>80</y>
+                                            <width>200</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>buttonOutputTwo</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>400</x>
+                                            <y>50</y>
+                                            <width>30</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>...</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEditOutputOne</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>20</y>
+                                            <width>200</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>buttonOutputOne</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>400</x>
+                                            <y>20</y>
+                                            <width>30</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>...</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEditOutputTwo</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>50</y>
+                                            <width>200</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string></string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textOutputOne</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>20</y>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Final Ages &amp; Coordinates</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textOutputTwo</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>50</y>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Age Histories (All Samples)</string>
+                                    </property>
+                                </widget>
+                            </widget>
+                            <spacer row="3" column="1">
+                                <property name="name">
+                                    <cstring>spacer13</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>404</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QGroupBox" row="2" column="0">
+                                <property name="name">
+                                    <cstring>groupInputFiles</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Input File(s) (Forward Model)</string>
+                                </property>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>buttonLoadOne</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>400</x>
+                                            <y>20</y>
+                                            <width>30</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>...</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>buttonLoadTwo</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>400</x>
+                                            <y>50</y>
+                                            <width>30</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>...</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>buttonLoadThree</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>400</x>
+                                            <y>80</y>
+                                            <width>30</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>...</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>buttonLoadFour</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>400</x>
+                                            <y>110</y>
+                                            <width>30</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>...</string>
+                                    </property>
+                                </widget>
+                                <widget class="QPushButton">
+                                    <property name="name">
+                                        <cstring>buttonLoadFive</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>400</x>
+                                            <y>140</y>
+                                            <width>30</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>...</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEditLoadFive</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>140</y>
+                                            <width>200</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLoadFive</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>140</y>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Z Coordinate History of Particles</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLoadFour</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>110</y>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Y Coordinate History of Particles</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEditLoadTwo</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>50</y>
+                                            <width>200</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEditLoadFour</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>110</y>
+                                            <width>200</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLoadThree</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>80</y>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>X Coordinate History of Particles</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEditLoadThree</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>true</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>80</y>
+                                            <width>200</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>lineEditLoadOne</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>190</x>
+                                            <y>20</y>
+                                            <width>200</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLoadOne</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>20</y>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Time History</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>textLoadTwo</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>50</y>
+                                            <width>180</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Temperature History</string>
+                                    </property>
+                                </widget>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>AHe</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Apatite (U-Th)/He Input</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout23</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <spacer row="3" column="0">
+                                <property name="name">
+                                    <cstring>spacer34</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>20</width>
+                                        <height>97</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="Line" row="0" column="0">
+                                <property name="name">
+                                    <cstring>mainLineTwo</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>HLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QGroupBox" row="2" column="0">
+                                <property name="name">
+                                    <cstring>AHeGrainParameterBox</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Apatite Grain Parameters</string>
+                                </property>
+                                <widget class="QCheckBox">
+                                    <property name="name">
+                                        <cstring>AHeConcProfile</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>130</y>
+                                            <width>310</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Activate Variable 238U, 232Th Concentration Profile</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>false</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AHeGrainSizeText</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>21</y>
+                                            <width>213</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Grain Radius (nm)</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer24</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>230</x>
+                                            <y>47</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AHeGrainSizeInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>256</x>
+                                            <y>21</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>42.50</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AHeU238Conc</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>47</y>
+                                            <width>213</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>238U Homogeneous Concentration (ppm)</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer23</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>230</x>
+                                            <y>73</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer25</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>230</x>
+                                            <y>21</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QSpinBox">
+                                    <property name="name">
+                                        <cstring>AHeThConcInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>256</x>
+                                            <y>73</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>600</number>
+                                    </property>
+                                    <property name="minValue">
+                                        <number>1</number>
+                                    </property>
+                                    <property name="value">
+                                        <number>27</number>
+                                    </property>
+                                </widget>
+                                <widget class="QSpinBox">
+                                    <property name="name">
+                                        <cstring>AHeUConcInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>256</x>
+                                            <y>47</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>600</number>
+                                    </property>
+                                    <property name="minValue">
+                                        <number>1</number>
+                                    </property>
+                                    <property name="value">
+                                        <number>13</number>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AHeTh232Conc</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>73</y>
+                                            <width>213</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>232Th Homogeneous Concentration (ppm)</string>
+                                    </property>
+                                </widget>
+                            </widget>
+                            <widget class="QLayoutWidget" row="4" column="0">
+                                <property name="name">
+                                    <cstring>layout19</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>AHeRunTestBox</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Calculate Age</string>
+                                        </property>
+                                        <property name="checked">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>AHeDetailShow</cstring>
+                                        </property>
+                                        <property name="enabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="text">
+                                            <string>Show Detailed Apatite (U-Th)/He Output</string>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer33</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>532</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                </hbox>
+                            </widget>
+                            <widget class="QGroupBox" row="1" column="0">
+                                <property name="name">
+                                    <cstring>AHeKineticGroupBox</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Apatite Kinetic Parameters</string>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AHeInitialDiffuse</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>21</y>
+                                            <width>139</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Initial Diffusivity (um^2/sec)</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer21</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>156</x>
+                                            <y>21</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AHeActivationEnergyInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>182</x>
+                                            <y>47</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>33.0</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AHeInitialDiffuseInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>182</x>
+                                            <y>21</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>50.0e8</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer22</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>156</x>
+                                            <y>47</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AHeActivationEnergy</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>47</y>
+                                            <width>139</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Activation Energy (kcal/mol)</string>
+                                    </property>
+                                </widget>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>ZHe</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Zircon (U-Th)/He Input</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout24</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QGroupBox" row="2" column="0">
+                                <property name="name">
+                                    <cstring>ZHeGrainParameterBox</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Zircon Grain Parameters</string>
+                                </property>
+                                <widget class="QCheckBox">
+                                    <property name="name">
+                                        <cstring>ZHeConcProfile</cstring>
+                                    </property>
+                                    <property name="enabled">
+                                        <bool>false</bool>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>130</y>
+                                            <width>310</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Activate Variable 238U, 232Th Concentration Profile</string>
+                                    </property>
+                                    <property name="checked">
+                                        <bool>false</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QSpinBox">
+                                    <property name="name">
+                                        <cstring>ZHeThConcInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>256</x>
+                                            <y>73</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>600</number>
+                                    </property>
+                                    <property name="minValue">
+                                        <number>1</number>
+                                    </property>
+                                    <property name="value">
+                                        <number>100</number>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>ZHeGrainSizeText</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>21</y>
+                                            <width>213</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Grain Radius (um)</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>ZHeTh232Conc</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>73</y>
+                                            <width>213</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>232Th Homogeneous Concentration (ppm)</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>ZHeU238Conc</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>47</y>
+                                            <width>213</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>238U Homogeneous Concentration (ppm)</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer30</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>230</x>
+                                            <y>21</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer32</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>230</x>
+                                            <y>73</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>ZHeGrainSizeInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>256</x>
+                                            <y>21</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>40.0</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer31</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>230</x>
+                                            <y>47</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QSpinBox">
+                                    <property name="name">
+                                        <cstring>ZHeUConcInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>256</x>
+                                            <y>47</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>600</number>
+                                    </property>
+                                    <property name="minValue">
+                                        <number>1</number>
+                                    </property>
+                                    <property name="value">
+                                        <number>200</number>
+                                    </property>
+                                </widget>
+                            </widget>
+                            <widget class="Line" row="0" column="0">
+                                <property name="name">
+                                    <cstring>mainLineThree</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>HLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QGroupBox" row="1" column="0">
+                                <property name="name">
+                                    <cstring>ZHeKineticGroupBox</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>Zircon Kinetic Parameters </string>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>ZHeActivationEnergy</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>47</y>
+                                            <width>139</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Activation Energy (kcal/mol)</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>ZHeActivationEnergyInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>182</x>
+                                            <y>47</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>40.4</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>ZHeInitialDiffuse</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>21</y>
+                                            <width>139</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Initial Diffusivity (um^2/sec)</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>ZHeInitialDiffuseInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>182</x>
+                                            <y>21</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>4.6e7</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer29</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>156</x>
+                                            <y>47</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer28</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>156</x>
+                                            <y>21</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                            </widget>
+                            <spacer row="3" column="0">
+                                <property name="name">
+                                    <cstring>spacer36</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>20</width>
+                                        <height>98</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLayoutWidget" row="4" column="0">
+                                <property name="name">
+                                    <cstring>layout21</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>ZHeRunTestBox</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Calculate Age</string>
+                                        </property>
+                                        <property name="checked">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>ZHeDetailShow</cstring>
+                                        </property>
+                                        <property name="enabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="text">
+                                            <string>Show Detailed Zircon (U-Th)/He Output</string>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer35</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>540</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                </hbox>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>AFT</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Multi-Kinetic Apatite Fission Track Input</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout25</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QGroupBox" row="1" column="0">
+                                <property name="name">
+                                    <cstring>AFTMainGroupBox</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>AFT Main Properties</string>
+                                </property>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTCoefficients</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>10</x>
+                                            <y>180</y>
+                                            <width>120</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Coefficients</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTC2Text</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>263</y>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>C2</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AFTC3Input</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>58</x>
+                                            <y>289</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>-7.6423</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AFTC1Input</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>58</x>
+                                            <y>237</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>0.38951</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer38</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>32</x>
+                                            <y>211</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTC0Text</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>211</y>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>C0</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer41</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>32</x>
+                                            <y>289</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer39_3</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>32</x>
+                                            <y>237</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTC3Text</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>289</y>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>C3</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AFTC0Input</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>58</x>
+                                            <y>211</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>-19.844</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer40</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>32</x>
+                                            <y>263</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AFTC2Input</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>58</x>
+                                            <y>263</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>-51.253</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTC1Text</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>237</y>
+                                            <width>16</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>C1</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTMinTrackLength</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>141</y>
+                                            <width>230</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Minimum Detectable Normalized Track Length</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer37</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Expanding</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>247</x>
+                                            <y>141</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AFTMinTrackLengthInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>273</x>
+                                            <y>141</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>0.13</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AFTDparInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>77</x>
+                                            <y>99</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>1.8</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTAlphaText</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>21</y>
+                                            <width>34</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Alpha</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer33_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>51</x>
+                                            <y>21</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AFTAlphaInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>77</x>
+                                            <y>21</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>-0.12327</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer34_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>51</x>
+                                            <y>47</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer35_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>51</x>
+                                            <y>73</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTBetaText</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>47</y>
+                                            <width>34</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Beta</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTDparText</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>99</y>
+                                            <width>34</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Dpar</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>AFTBetaInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>77</x>
+                                            <y>47</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>-11.988</string>
+                                    </property>
+                                    <property name="readOnly">
+                                        <bool>false</bool>
+                                    </property>
+                                </widget>
+                                <widget class="QSpinBox">
+                                    <property name="name">
+                                        <cstring>AFTNstepsInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>77</x>
+                                            <y>73</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="maxValue">
+                                        <number>100</number>
+                                    </property>
+                                    <property name="minValue">
+                                        <number>1</number>
+                                    </property>
+                                    <property name="value">
+                                        <number>20</number>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>AFTNstepsText</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>73</y>
+                                            <width>34</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Nsteps</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer36_2</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>51</x>
+                                            <y>99</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                            </widget>
+                            <widget class="Line" row="0" column="0">
+                                <property name="name">
+                                    <cstring>mainLineFour</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>HLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLayoutWidget" row="3" column="0">
+                                <property name="name">
+                                    <cstring>layout27</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>AFTRunTestBox</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Calculate Age</string>
+                                        </property>
+                                        <property name="checked">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>AFTDetailShow</cstring>
+                                        </property>
+                                        <property name="enabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="text">
+                                            <string>Show Detailed AFT Output</string>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer39</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>605</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                </hbox>
+                            </widget>
+                            <spacer row="2" column="0">
+                                <property name="name">
+                                    <cstring>spacer14</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>20</width>
+                                        <height>33</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>ZFT</cstring>
+                </property>
+                <attribute name="title">
+                    <string>Zircon Fission Track Input</string>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget" row="0" column="0">
+                        <property name="name">
+                            <cstring>layout26</cstring>
+                        </property>
+                        <grid>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="Line" row="0" column="0">
+                                <property name="name">
+                                    <cstring>mainLineFive</cstring>
+                                </property>
+                                <property name="frameShape">
+                                    <enum>HLine</enum>
+                                </property>
+                                <property name="frameShadow">
+                                    <enum>Sunken</enum>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                            </widget>
+                            <spacer row="2" column="0">
+                                <property name="name">
+                                    <cstring>spacer15</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Vertical</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>20</width>
+                                        <height>249</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QLayoutWidget" row="3" column="0">
+                                <property name="name">
+                                    <cstring>layout12</cstring>
+                                </property>
+                                <hbox>
+                                    <property name="name">
+                                        <cstring>unnamed</cstring>
+                                    </property>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>ZFTRunTestBox</cstring>
+                                        </property>
+                                        <property name="text">
+                                            <string>Calculate Age</string>
+                                        </property>
+                                        <property name="checked">
+                                            <bool>true</bool>
+                                        </property>
+                                    </widget>
+                                    <widget class="QCheckBox">
+                                        <property name="name">
+                                            <cstring>ZFTDetailShow</cstring>
+                                        </property>
+                                        <property name="enabled">
+                                            <bool>false</bool>
+                                        </property>
+                                        <property name="text">
+                                            <string>Show Detailed ZFT Output</string>
+                                        </property>
+                                    </widget>
+                                    <spacer>
+                                        <property name="name">
+                                            <cstring>spacer39_2</cstring>
+                                        </property>
+                                        <property name="orientation">
+                                            <enum>Horizontal</enum>
+                                        </property>
+                                        <property name="sizeType">
+                                            <enum>Expanding</enum>
+                                        </property>
+                                        <property name="sizeHint">
+                                            <size>
+                                                <width>590</width>
+                                                <height>20</height>
+                                            </size>
+                                        </property>
+                                    </spacer>
+                                </hbox>
+                            </widget>
+                            <widget class="QGroupBox" row="1" column="0">
+                                <property name="name">
+                                    <cstring>ZFTMainGroupBox</cstring>
+                                </property>
+                                <property name="title">
+                                    <string>ZFT Closure Constants</string>
+                                </property>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer44</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>168</x>
+                                            <y>21</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>ZFTActEnergy</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>73</y>
+                                            <width>151</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Activation Energy (kcal/mol)</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer42</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>168</x>
+                                            <y>73</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>ZFTEbarInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>194</x>
+                                            <y>73</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>49.77</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>ZFTMatConst</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>21</y>
+                                            <width>151</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Material Constant (My)</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>ZFTBInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>194</x>
+                                            <y>21</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>3.160e-22</string>
+                                    </property>
+                                </widget>
+                                <spacer>
+                                    <property name="name">
+                                        <cstring>spacer43</cstring>
+                                    </property>
+                                    <property name="orientation">
+                                        <enum>Horizontal</enum>
+                                    </property>
+                                    <property name="sizeType">
+                                        <enum>Fixed</enum>
+                                    </property>
+                                    <property name="sizeHint">
+                                        <size>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </size>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>168</x>
+                                            <y>47</y>
+                                            <width>20</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                </spacer>
+                                <widget class="QLabel">
+                                    <property name="name">
+                                        <cstring>ZFTGasConst</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>11</x>
+                                            <y>47</y>
+                                            <width>151</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>Gas Constant (kcal/(mol*deg))</string>
+                                    </property>
+                                </widget>
+                                <widget class="QLineEdit">
+                                    <property name="name">
+                                        <cstring>ZFTRInput</cstring>
+                                    </property>
+                                    <property name="geometry">
+                                        <rect>
+                                            <x>194</x>
+                                            <y>47</y>
+                                            <width>89</width>
+                                            <height>20</height>
+                                        </rect>
+                                    </property>
+                                    <property name="text">
+                                        <string>0.0019872</string>
+                                    </property>
+                                </widget>
+                            </widget>
+                        </grid>
+                    </widget>
+                </grid>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>menubar</cstring>
+    </property>
+    <property name="enabled">
+        <bool>true</bool>
+    </property>
+    <item text="&amp;File" name="fileMenu">
+        <action name="fileOpenAction"/>
+        <action name="fileSaveAction"/>
+        <action name="fileSaveAsAction"/>
+        <action name="filePrintAction"/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="&amp;Edit" name="editMenu">
+        <action name="editCutAction"/>
+        <action name="editCopyAction"/>
+        <action name="editPasteAction"/>
+    </item>
+</menubar>
+<toolbars>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileOpenAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>fileopen</iconset>
+        </property>
+        <property name="text">
+            <string>Load Session</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Load Session...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+O</string>
+        </property>
+        <property name="visible">
+            <bool>false</bool>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>filesave</iconset>
+        </property>
+        <property name="text">
+            <string>Save Session</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Save Session</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+        <property name="visible">
+            <bool>false</bool>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAsAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="text">
+            <string>Save Session As...</string>
+        </property>
+        <property name="menuText">
+            <string>Save Session &amp;As...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+        <property name="visible">
+            <bool>false</bool>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>filePrintAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>print</iconset>
+        </property>
+        <property name="text">
+            <string>Print</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Print...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+P</string>
+        </property>
+        <property name="visible">
+            <bool>false</bool>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Close</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Close</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Q</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCutAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>editcut</iconset>
+        </property>
+        <property name="text">
+            <string>Cut</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Cut</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+X</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCopyAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>editcopy</iconset>
+        </property>
+        <property name="text">
+            <string>Copy</string>
+        </property>
+        <property name="menuText">
+            <string>C&amp;opy</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+C</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editPasteAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>editpaste</iconset>
+        </property>
+        <property name="text">
+            <string>Paste</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Paste</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+V</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpContentsAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="text">
+            <string>Terra Help</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;XTerra Help...</string>
+        </property>
+        <property name="toolTip">
+            <string>XTerra Help</string>
+        </property>
+        <property name="accel">
+            <string>F1</string>
+        </property>
+        <property name="visible">
+            <bool>false</bool>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpIndexAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>true</bool>
+        </property>
+        <property name="text">
+            <string>Index</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Index...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+        <property name="visible">
+            <bool>false</bool>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>&amp;About</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;About</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutQtAction</cstring>
+        </property>
+        <property name="text">
+            <string>About Qt</string>
+        </property>
+        <property name="menuText">
+            <string>About &amp;Qt</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAbout_QtAction</cstring>
+        </property>
+        <property name="text">
+            <string>About Qt</string>
+        </property>
+        <property name="menuText">
+            <string>About Qt</string>
+        </property>
+    </action>
+</actions>
+<connections>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>mainform</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>editCutAction</sender>
+        <signal>activated()</signal>
+        <receiver>mainform</receiver>
+        <slot>editCut()</slot>
+    </connection>
+    <connection>
+        <sender>editCopyAction</sender>
+        <signal>activated()</signal>
+        <receiver>mainform</receiver>
+        <slot>editCopy()</slot>
+    </connection>
+    <connection>
+        <sender>editPasteAction</sender>
+        <signal>activated()</signal>
+        <receiver>mainform</receiver>
+        <slot>editPaste()</slot>
+    </connection>
+    <connection>
+        <sender>showOutputButton</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>showOutput()</slot>
+    </connection>
+    <connection>
+        <sender>buttonLoadOne</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>loadInputFileOne()</slot>
+    </connection>
+    <connection>
+        <sender>buttonLoadTwo</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>loadInputFileTwo()</slot>
+    </connection>
+    <connection>
+        <sender>buttonLoadThree</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>loadInputFileThree()</slot>
+    </connection>
+    <connection>
+        <sender>buttonOutputOne</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>saveOutputFileOne()</slot>
+    </connection>
+    <connection>
+        <sender>calAllAgesButton</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>processAll()</slot>
+    </connection>
+    <connection>
+        <sender>calSelAgesButton</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>processSel()</slot>
+    </connection>
+    <connection>
+        <sender>buttonOutputTwo</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>saveOutputFileTwo()</slot>
+    </connection>
+    <connection>
+        <sender>buttonOutputThree</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>saveOutputFileThree()</slot>
+    </connection>
+    <connection>
+        <sender>buttonLoadFour</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>loadInputFileFour()</slot>
+    </connection>
+    <connection>
+        <sender>buttonLoadFive</sender>
+        <signal>clicked()</signal>
+        <receiver>mainform</receiver>
+        <slot>loadInputFileFive()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>mainTab</tabstop>
+    <tabstop>lineEditLoadOne</tabstop>
+    <tabstop>buttonLoadOne</tabstop>
+    <tabstop>lineEditLoadTwo</tabstop>
+    <tabstop>buttonLoadTwo</tabstop>
+    <tabstop>lineEditLoadThree</tabstop>
+    <tabstop>buttonLoadThree</tabstop>
+    <tabstop>lineEditLoadFour</tabstop>
+    <tabstop>buttonLoadFour</tabstop>
+    <tabstop>lineEditLoadFive</tabstop>
+    <tabstop>buttonLoadFive</tabstop>
+    <tabstop>lineEditOutputOne</tabstop>
+    <tabstop>buttonOutputOne</tabstop>
+    <tabstop>lineEditOutputTwo</tabstop>
+    <tabstop>buttonOutputTwo</tabstop>
+    <tabstop>lineEditOutputThree</tabstop>
+    <tabstop>buttonOutputThree</tabstop>
+    <tabstop>MilyearsInput</tabstop>
+    <tabstop>showOutputButton</tabstop>
+    <tabstop>calSelAgesButton</tabstop>
+    <tabstop>calAllAgesButton</tabstop>
+    <tabstop>AHeInitialDiffuseInput</tabstop>
+    <tabstop>AHeActivationEnergyInput</tabstop>
+    <tabstop>AHeGrainSizeInput</tabstop>
+    <tabstop>AHeUConcInput</tabstop>
+    <tabstop>AHeThConcInput</tabstop>
+    <tabstop>AHeConcProfile</tabstop>
+    <tabstop>AHeRunTestBox</tabstop>
+    <tabstop>AHeDetailShow</tabstop>
+    <tabstop>ZHeInitialDiffuseInput</tabstop>
+    <tabstop>ZHeActivationEnergyInput</tabstop>
+    <tabstop>ZHeGrainSizeInput</tabstop>
+    <tabstop>ZHeUConcInput</tabstop>
+    <tabstop>ZHeThConcInput</tabstop>
+    <tabstop>ZHeConcProfile</tabstop>
+    <tabstop>ZHeRunTestBox</tabstop>
+    <tabstop>ZHeDetailShow</tabstop>
+    <tabstop>AFTAlphaInput</tabstop>
+    <tabstop>AFTBetaInput</tabstop>
+    <tabstop>AFTMinTrackLengthInput</tabstop>
+    <tabstop>AFTC0Input</tabstop>
+    <tabstop>AFTC1Input</tabstop>
+    <tabstop>AFTC2Input</tabstop>
+    <tabstop>AFTC3Input</tabstop>
+    <tabstop>AFTRunTestBox</tabstop>
+    <tabstop>AFTDetailShow</tabstop>
+    <tabstop>ZFTBInput</tabstop>
+    <tabstop>ZFTRInput</tabstop>
+    <tabstop>ZFTEbarInput</tabstop>
+    <tabstop>ZFTRunTestBox</tabstop>
+    <tabstop>ZFTDetailShow</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">mainform.ui.h</include>
+</includes>
+<slots>
+    <slot>editCut()</slot>
+    <slot>editCopy()</slot>
+    <slot>editPaste()</slot>
+    <slot>showOutput()</slot>
+    <slot>loadInputFileOne()</slot>
+    <slot>loadInputFileTwo()</slot>
+    <slot>loadInputFileThree()</slot>
+    <slot>loadInputFileFour()</slot>
+    <slot>loadInputFileFive()</slot>
+    <slot>saveOutputFileOne()</slot>
+    <slot>saveOutputFileTwo()</slot>
+    <slot>saveOutputFileThree()</slot>
+    <slot>processAll()</slot>
+    <slot>processSel()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,16 @@
+7/9/05
+        - made some cosmetic changes to age_prediction, in case a user's font
+          settings are big.
+
+        - changed the path settings for age_prediction, tested this and it 
+          appears to work.
+
+        - changed the font to the main window graphic to 'Eras ITC Medium'.
+
+        - cleaned up the code for the topotherm gui, removed all the commented
+          out code.  not sure why there was so much commented out code - no more
+          clutter now.
+
+8/22/05
+        - added an about box to the main window.
+        - changed the default directory for the save output file dialog box to ./output/age_prediction
